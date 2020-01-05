@@ -1,0 +1,4 @@
+<div *ngIf="movies.length > 0; else noContent">{{ movies }}</div>
+<ng-template #noContent>
+  <ng-no-content></ng-no-content>
+</ng-template>

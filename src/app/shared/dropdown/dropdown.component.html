@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let dropdown of dropdownObj" [value]="dropdown.value">
+      {{ dropdown.key }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

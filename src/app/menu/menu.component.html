@@ -1,0 +1,9 @@
+<div class="mat-app-background basic-container">
+  <button mat-button class="menu-button" [matMenuTriggerFor]="menu">
+    Menu
+  </button>
+  <mat-menu #menu="matMenu">
+    <button routerLink="/search-songs" mat-menu-item>Search Songs</button>
+    <button routerLink="/search-movies" mat-menu-item>Search Movies</button>
+  </mat-menu>
+</div>
