@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "ng-filter",
@@ -6,6 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./filter.component.scss"]
 })
 export class FilterComponent implements OnInit {
+  @Input() datePickerplaceholder = "";
+  @Input() dropDownplaceholder = "";
+  @Input() searchBarplaceholder = "";
   constructor() {}
 
   ngOnInit() {}

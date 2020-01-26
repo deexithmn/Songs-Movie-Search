@@ -1,0 +1,42 @@
+<div class="person">
+  <h2>Person Persona</h2>
+  <ng-filter
+    [searchBarplaceholder]="'Search Person'"
+    [dropDownplaceholder]="'Select Person Categoty'"
+    [datePickerplaceholder]="'Date'"
+  ></ng-filter>
+  <div class="person-details">
+    <button
+      class="addNewPerson"
+      (click)="addNewUser()"
+      mat-flat-button
+      color="primary"
+    >
+      Add Person
+    </button>
+  </div>
+  <div *ngIf="loaded; else loading" class="allPerson">
+    <div *ngFor="let per of person; index as i">
+      <div class="row">
+        <span class="name"> <strong>Name</strong> : {{ per.name }}</span>
+        <span class="delete">
+          <button mat-flat-button color="warn" (click)="deletePerson(per.id)">
+            Delete
+          </button>
+        </span>
+        <span class="update">
+          <button
+            mat-flat-button
+            color="warn"
+            (click)="updatePerson(per.id, per)"
+          >
+            Update
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </ng-template>
+</div>

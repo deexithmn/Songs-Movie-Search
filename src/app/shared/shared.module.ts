@@ -6,19 +6,36 @@ import { FormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
-import { MatButtonModule } from "@angular/material/button";
 import { NoContentComponent } from "./no-content/no-content.component";
+import { DatepickerComponent } from "./datepicker/datepicker.component";
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatNativeDateModule } from "@angular/material/core";
 
 @NgModule({
-  declarations: [SearchBarComponent, DropdownComponent, NoContentComponent],
+  declarations: [
+    SearchBarComponent,
+    DropdownComponent,
+    NoContentComponent,
+    DatepickerComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     MatIconModule,
     MatInputModule,
     MatSelectModule,
-    MatButtonModule
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FormsModule,
+    MatIconModule,
+    MatInputModule
   ],
-  exports: [SearchBarComponent, DropdownComponent, NoContentComponent]
+  exports: [
+    SearchBarComponent,
+    DropdownComponent,
+    NoContentComponent,
+    DatepickerComponent,
+    MatIconModule
+  ]
 })
 export class SharedModule {}

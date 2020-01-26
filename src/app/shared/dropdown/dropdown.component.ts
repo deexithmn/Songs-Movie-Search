@@ -6,6 +6,7 @@ import { DropdownModel } from "src/models/dropdown.model";
   styleUrls: ["./dropdown.component.scss"]
 })
 export class DropdownComponent implements OnInit {
+  @Input() placeholder = "";
   constructor() {}
   @Input()
   dropdownObj: DropdownModel[] = [];

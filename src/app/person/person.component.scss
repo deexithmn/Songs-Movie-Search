@@ -1,0 +1,61 @@
+.person {
+  background-color: lightgray;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  height: auto;
+  border-radius: 25px;
+  padding: 25px;
+}
+h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  padding: 20px;
+}
+.addNewPerson {
+  margin-left: -5px;
+  width: 150px;
+  margin-left: 25px;
+}
+.person-details {
+  display: flex;
+  padding: 20px;
+  float: right;
+}
+.allPerson {
+  background-color: lighten($color: #000000, $amount: 0);
+  color: whitesmoke;
+  padding: 10px;
+  opacity: 0.8;
+  margin-top: 100px;
+  padding-bottom: 1.8%;
+  border-radius: 10px;
+}
+.row {
+  display: inline;
+  text-align: center;
+  line-height: 35px;
+}
+.delete {
+  padding: 15px;
+}
+.delete button {
+  float: right;
+}
+.update {
+  margin: 15px;
+}
+.update button {
+  float: right;
+  margin-right: 14px;
+  background-color: lightgray;
+  color: black;
+}
+.row .name {
+  padding-left: 2%;
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+}

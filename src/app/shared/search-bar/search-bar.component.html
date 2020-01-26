@@ -1,8 +1,8 @@
-<mat-form-field class="example-form-field">
+<mat-form-field>
   <input
     matInput
     type="text"
-    placeholder="Search"
+    placeholder="{{ placeholder }}"
     [(ngModel)]="value"
     (keyup)="onFilter()"
   />

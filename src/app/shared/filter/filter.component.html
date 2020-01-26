@@ -1,0 +1,16 @@
+<div class="filter">
+  <ng-search-bar
+    *ngIf="searchBarplaceholder"
+    [placeholder]="searchBarplaceholder"
+    (searchValue)="OnFilter($event)"
+  ></ng-search-bar>
+  <ng-dropdown
+    *ngIf="dropDownplaceholder"
+    [placeholder]="dropDownplaceholder"
+    dropdownValues="[dropdownObj]"
+  ></ng-dropdown>
+  <ng-datepicker
+    *ngIf="datePickerplaceholder"
+    [placeholder]="datePickerplaceholder"
+  ></ng-datepicker>
+</div>
